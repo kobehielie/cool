@@ -1,0 +1,59 @@
+/* styles.css */
+
+body {
+  background-color: aliceblue;
+}
+#connexion {
+    font-family: Arial, sans-serif;
+    background-color: rgb(106, 106, 222);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgb(210, 198, 165) 10px 10px 10px 10px;
+    border: 10%;
+
+  }
+  #connexion button {
+    text-align: center;
+    align-items: center;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+    align-content: center;
+    position: center;
+    color: rgb(30, 80, 123);
+    box-shadow: rgb(86, 86, 190);
+  
+
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: yellow;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 200px;
+    position: static;
+  }
+  h1 {
+    text-align: center;
+  }
+ 

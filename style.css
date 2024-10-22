@@ -1,0 +1,167 @@
+body {
+    background-color: rgb(100, 100, 198);
+}
+body p {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    color: blanchedalmond;
+}
+body img {
+    width: 900px;
+    height: 905px;
+    position: relative;
+    pointer-events: visiblePainted;
+   
+    border: 3px solid blue;
+    gap: 100%;
+    margin-left: none;
+    margin-right: 70px;
+}
+body a button{
+    background-color:yellow;
+    color: black;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 12px;
+  
+    margin-top: auto;
+    padding-left: 12px;
+
+}
+body a button:hover{
+    columns: flex;
+
+}
+body a .connection {
+  margin-right: 0 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+
+}
+
+/* Style pour le conteneur dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style pour le bouton dropdown */
+.dropdown-btn {
+    background-color: #4CAF50; /* Couleur du bouton */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Ajouter un effet de survol (hover) pour le bouton */
+.dropdown-btn:hover {
+    background-color: #45a049; /* Couleur au survol */
+}
+
+/* Style du menu dropdown (caché par défaut) */
+.dropdown-content {
+    display: none; /* Caché par défaut */
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Ombre sous le menu */
+    z-index: 1;
+    border-radius: 5px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style pour chaque élément de la liste */
+.dropdown-content li {
+    border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none; /* Pas de bordure pour le dernier élément */
+}
+
+/* Style des liens dans chaque élément */
+.dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease; /* Transition pour l'effet hover */
+}
+
+/* Ajouter un effet au survol des éléments de la liste */
+.dropdown-content li a:hover {
+    background-color: #f1f1f1; /* Couleur de fond au survol */
+}
+
+/* Afficher le menu quand le bouton est cliqué */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 12px;
+ 
+    width: 100%;
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

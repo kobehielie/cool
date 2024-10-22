@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="/connexion.css">
+</head>
+<body>
+    <div  id="connexion">
+        
+         <h1>CONNEXION AU COMPTE</h1>
+        <a href="aperçuTWINNetwork.html">  <form method="POST">
+         <label for="nom_utilisateur">Nom d'utilisateur :</label>
+         <input type="text" id="nom_utilisateur" name="nom_utilisateur" required>
+         <label for="mot_de_passe">Mot de passe :</label>
+         <input type="password" id="mot_de_passe" name="mot_de_passe" required>
+         <button type="submit">Connexion</button>
+    </div>
+</form> <script src="script.js"> 
+        // Sélection du formulaire
+const form = document.querySelector('form');
+
+// Écoute de l'événement de soumission du formulaire
+form.addEventListener('submit', function(event) {
+    // Récupération des valeurs des champs
+    const nomUtilisateur = document.getElementById('nom_utilisateur').value.trim();
+    const motDePasse = document.getElementById('mot_de_passe').value.trim();
+
+    // Initialisation d'un drapeau pour suivre les erreurs
+    let valid = true;
+
+    // Vérification si le champ "Nom d'utilisateur" est rempli
+    if (nomUtilisateur === '') {
+        alert('Le champ "Nom d\'utilisateur" est obligatoire.');
+        valid = false;
+    }
+
+    // Vérification si le champ "Mot de passe" est rempli
+    if (motDePasse === '') {
+        alert('Le champ "Mot de passe" est obligatoire.');
+        valid = false;
+    }
+
+    // Empêche la soumission si un des champs est vide
+    if (!valid) {
+        event.preventDefault(); // Bloque la soumission du formulaire
+    }
+});
+
+        </script>
+
+</body>
+</html>

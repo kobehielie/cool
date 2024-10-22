@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.back-btn, .search-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    background-color: #f06292;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.edit-profile-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #1a73e8;
+    background-color: white;
+    color: #1a73e8;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.posts-section {
+    padding: 20px;
+}
+
+.posts-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.posts-nav p {
+    font-weight: bold;
+}
+
+.posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-item span {
+    font-size: 16px;
+}
+
+.post-item button {
+    background-color: #f06292;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}

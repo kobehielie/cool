@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher les informations saisies</title>
+    <style>
+        input {
+            padding: 10px;
+            margin: 5px;
+            border: 2px solid grey;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Formulaire d'informations</h2>
+    <form onsubmit="afficherInfos(event)">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required><br>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <button type="submit">Soumettre</button>
+    </form>
+
+    <h3>Informations saisies :</h3>
+    <p id="resultat"></p>
+
+    <script>
+        function afficherInfos(event) {
+            // Empêcher le rechargement de la page lors de la soumission du formulaire
+            event.preventDefault();
+
+            // Récupérer les valeurs des champs de texte
+            let nom = document.getElementById("nom").value;
+            let email = document.getElementById("email").value;
+
+            // Afficher les informations saisies dans le paragraphe avec l'id "resultat"
+            let resultat = "Nom : " + nom + "<br>Email : " + email;
+            document.getElementById("resultat").innerHTML = resultat;
+        }
+    </script>
+
+</body>
+</html>
